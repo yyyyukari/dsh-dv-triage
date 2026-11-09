@@ -30,8 +30,14 @@ c05    5 tests  mismatch · SCB_MISMATCH · uvm_test_top.env.scoreboard  score=6
 ## 安装到 DSH
 
 ```sh
+dsh plugin --profile web add github:yyyyukari/dsh-dv-triage
+# 重启 dsh web 或桌面端后，会话里可用 dv_* 工具与 dv-triage 技能
+```
+
+本地开发：
+
+```sh
 dsh plugin --profile web add D:\DS插件\dsh-dv-triage
-# 重启 dsh web 或桌面端后，会话里可用 dv_* 工具与 /dv-triage 技能
 ```
 
 先验证 profile 层：
