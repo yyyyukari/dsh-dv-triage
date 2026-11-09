@@ -1,0 +1,4 @@
+# dsh-dv-triage bundle layer: mounts the five dv_* tools over the profile root.
+- insert:
+    - id: dv-triage
+      name: 'dsh-dv-triage'

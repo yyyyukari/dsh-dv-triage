@@ -1,0 +1,57 @@
+{
+  "name": "dsh-dv-triage",
+  "version": "0.1.0",
+  "description": "DSH regression triage: turn a regression directory of logs into ranked, evidence-backed failure clusters with repro commands and verified source locations.",
+  "type": "module",
+  "main": "lib/index.js",
+  "bin": {
+    "dv-triage": "./bin/dv-triage.js"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "bin",
+    "scripts",
+    "cordis.patch.yml",
+    "skills",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "skills": [
+      "./skills/dv-triage/SKILL.md"
+    ]
+  },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node bin/dv-triage.js demo"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "verification",
+    "regression",
+    "triage",
+    "uvm",
+    "verilog",
+    "systemverilog"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyyyukari/dsh-dv-triage.git"
+  },
+  "homepage": "https://github.com/yyyyukari/dsh-dv-triage",
+  "bugs": {
+    "url": "https://github.com/yyyyukari/dsh-dv-triage/issues"
+  },
+  "license": "MIT"
+}
